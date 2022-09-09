@@ -14,6 +14,7 @@ public class RPCServer {
         WebServer server = new WebServer(1200);
         server.getXmlRpcServer().setHandlerMapping(mapping);
         server.start();
-        System.out.println("Waiting");
+        System.out.println("Server running int http://localhost:1200");
+        System.out.println("Waiting request...");
     }
 }
