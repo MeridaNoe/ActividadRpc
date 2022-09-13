@@ -44,12 +44,15 @@ public class Methods {
 
     }
 
-
+    /*TERCERO*/
+    public String suma(double suma){
+        return "El resultado es: " + suma;
+    }
 
 /*cuarto*/
     private int[] array = new int[5];
 
-    public void cargar() {
+    public void reload() {
         int i;
         System.out.println("Indica los valores  ");
         for (i = 0; i < array.length; i++) {
@@ -57,14 +60,9 @@ public class Methods {
             array[i] = scanner.nextInt();
         }
     }
-    public void imprimir() {
+    public void print() {
         System.out.println("Arreglo en orden ascendente:");
-        int i,j, aux;/*
-        for (i = 0; i < array.length; i++) {
-                System.out.print(array[i] + " ");
-           // System.out.println();
-        }*/
-
+        int i,j, aux;
         for (i = 0; i < array.length; i++) {
             for (j = i+1; j < array.length; j++) {
                 if(array[i]>array[j]){
@@ -74,7 +72,6 @@ public class Methods {
                 }
             }
         }
-
         for (i = 0; i < array.length; i++) {
             System.out.print(array[i]+ ", ");
         }
